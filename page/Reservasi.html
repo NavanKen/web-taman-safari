@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFORMASI & RESERVASI</title>
+    <link rel="stylesheet" href="../css/Reservasi.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsif.css" />
+    <link
+      rel="icon"
+      href="../assets/img/Taman_Safari_Indonesia_logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <a href=""
+            ><img
+              class="logo"
+              src="../assets/img/Taman_Safari_Indonesia_logo.png"
+              alt=""
+          /></a>
+          <ul class="nav-list">
+            <li><a href="../index.html#home">HOME</a></li>
+            <li><a href="../index.html#safari">SAFARI ADVENTURE</a></li>
+            <li><a href="#">LAYANAN & RESERVASI</a></li>
+            <li><a href="../index.html#hubungi">HUBUNGI KAMI</a></li>
+          </ul>
+          <div class="tombol">&#9776;</div>
+        </div>
+      </nav>
+    </header>
+    <form action="pesantiket.html" method="get">
+      <section class="banner">
+        <h2>DAPATKAN TIKET SEKARANG</h2>
+        <div class="containner">
+          <div class="card-container">
+            <div class="card-img">
+              <img src="../assets/img/zoo.png" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Reservasi Tiket</h3>
+
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="Nama"
+                  name="Nama"
+                  placeholder="Masukan Nama"
+                  required
+                />
+                <br />
+
+                <input
+                  type="number"
+                  id="no"
+                  name="no"
+                  placeholder="Nomor Telphone"
+                  required
+                />
+                <br />
+
+                <input
+                  type="date"
+                  id="tgl"
+                  name="tgl"
+                  required
+                  placeholder="Tanggal"
+                  aria-label="Pilih Tanggal"
+                />
+                <br />
+              </div>
+
+              <div class="form-row">
+                <select name="Sesi" id="Sesi">
+                  <option value="sesi">Pilih Sesi</option>
+                  <option value="Sesi 1">Sesi Pagi (10.00)</option>
+                  <option value="Sesi 2">Sesi Siang (13.00)</option>
+                  <option value="Sesi 3">Sesi Sore (15.30)</option>
+                  <option value="Sesi 4">Sesi Malam (19.00)</option>
+                  <option value="Sesi 5">Sesi Tengah Malam (23.30)</option>
+                </select>
+                <br />
+
+                <select name="Jumlah" id="Jumlah">
+                  <option value="jumlah">Jumlah Tiket</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+                <select name="Jumlah" id="Jumlah">
+                  <option value="jumlah">Pilih Metode Pembayaran</option>
+                  <option value="Gopay">Gopay</option>
+                  <option value="Transfer Bank">Transfer Bank</option>
+                  <option value="Minimarket">Minimarket</option>
+                </select>
+                <br />
+              </div>
+              <button class="btn-reservasi" type="submit">
+                PESAN SEKARANG
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

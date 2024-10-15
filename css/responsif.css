@@ -1,0 +1,138 @@
+@media screen and (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tombol {
+    display: block;
+  }
+
+  .nav-container .nav-list {
+    position: absolute;
+    top: 100%;
+    right: -400%;
+    background-color: rgba(85, 113, 83, 0.899);
+    flex-direction: column;
+    width: 25rem;
+    height: 100vh;
+    transition: 0.3s;
+    padding: 1.6rem;
+  }
+  .nav-list.aktif {
+    right: 0;
+  }
+
+  .nav-container .nav-list li a {
+    display: block;
+    color: var(--secondary);
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-container .nav-list a:hover {
+    color: var(--hover);
+  }
+  .hubungi .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    padding: 70px 120px;
+    gap: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    display: block;
+    text-align: center;
+  }
+
+  .jam-buka,
+  .tiket-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .galery {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .galery img {
+    width: 95%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jam-buka,
+  .tiket-container {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .galery img {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .containner {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-row select,
+  .form-row input {
+    margin: 15px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-img img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
