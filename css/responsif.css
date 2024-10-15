@@ -8,6 +8,9 @@
   html {
     font-size: 55%;
   }
+  .text-card h2 {
+    font-size: 3.3rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
