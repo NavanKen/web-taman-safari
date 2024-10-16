@@ -64,12 +64,13 @@
                 <br />
 
                 <input
-                  type="date"
+                  type="text"
                   id="tgl"
                   name="tgl"
                   required
-                  placeholder="Tanggal"
-                  aria-label="Pilih Tanggal"
+                  placeholder="Masukkan Tanggal"
+                  onfocus="this.type='date'"
+                  onblur="this.type='text'"
                 />
                 <br />
               </div>
