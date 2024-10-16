@@ -35,7 +35,8 @@
 
   .nav-container .nav-list li a {
     display: block;
-    color: var(--secondary);
+    color: var(--text);
+    font-size: 1.4rem;
     transition: 0.3s ease-in-out;
   }
 
@@ -79,18 +80,11 @@
     margin: 10px 0;
   }
 
-  .galery {
-    flex-direction: column;
+  .galery img {
+    height: 15rem;
   }
-
   .card {
     height: 100%;
-  }
-
-  .galery img {
-    width: 95%;
-    height: auto;
-    margin-bottom: 10px;
   }
 }
 
@@ -99,12 +93,6 @@
   .tiket-container {
     height: auto;
     padding: 1rem;
-  }
-
-  .galery img {
-    width: 100%;
-    height: auto;
-    margin: 5px 0;
   }
 }
 
@@ -137,5 +125,18 @@
 @media (min-width: 769px) {
   .card-container {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .box {
+    width: 250px;
+    height: 400px;
   }
 }
