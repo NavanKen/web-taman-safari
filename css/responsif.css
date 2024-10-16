@@ -109,7 +109,7 @@
 }
 
 @media (min-width: 1400px) {
-  .containner {
+  .container {
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -124,9 +124,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .card-container {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .card-img img {
