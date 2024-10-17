@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taman Safari</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsif.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsif.css" />
     <link
       rel="icon"
       href="assets/img/Taman_Safari_Indonesia_logo.png"
@@ -123,35 +123,45 @@
       <div class="box-container">
         <div class="box">
           <img
+            src="assets/satwa/harimau.jpeg"
             alt=""
             height="400"
-            src="assets/satwa/cameleon.jpg"
             width="250"
           />
           <div class="details">
-            <h3>Cameleon</h3>
-            <button>Selengkapnya</button>
+            <h3>Harimau Sumatera</h3>
+            <button class="btn item-detail-button" data-target="detail-harimau">
+              Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/satwa/kukang.jpeg" alt="" height="400" width="250" />
+          <div class="details">
+            <h3>Kukang</h3>
+            <button class="btn item-detail-button" data-target="detail-kukang">
+              Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/satwa/anoa.jpeg" alt="" height="400" width="250" />
+          <div class="details">
+            <h3>Anoa</h3>
+            <button class="btn item-detail-button" data-target="detail-anoa">
+              Selengkapnya
+            </button>
           </div>
         </div>
         <div class="box">
-          <img alt="" height="400" src="assets/satwa/zebra.jpg" width="250" />
+          <img src="assets/satwa/zebra.jpg" alt="" height="400" width="250" />
           <div class="details">
             <h3>Zebra</h3>
-            <button>Selengkapnya</button>
-          </div>
-        </div>
-        <div class="box">
-          <img alt="" height="400" src="assets/satwa/jerapa.jpg" width="250" />
-          <div class="details">
-            <h3>Jerapa</h3>
-            <button>Selengkapnya</button>
-          </div>
-        </div>
-        <div class="box">
-          <img alt="" height="400" src="assets/satwa/monyet.jpg" width="250" />
-          <div class="details">
-            <h3>Monyet</h3>
-            <button>Selengkapnya</button>
+            <button class="btn item-detail-button" data-target="detail-zebra">
+              Selengkapnya
+            </button>
           </div>
         </div>
       </div>
@@ -346,6 +356,80 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <div class="modal" id="detail-harimau">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i class="fa-solid fa-x"></i></a>
+        <div class="content">
+          <img src="assets/satwa/harimau.jpeg" alt="" />
+          <div class="modal-text">
+            <h3>Harimau Sumatera</h3>
+            <p>
+              Harimau sumatra adalah populasi Panthera tigris sondaica yang
+              mendiami pulau Sumatra, Indonesia dan satu-satunya anggota
+              subspesies harimau sunda yang masih bertahan hidup hingga saat ini
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="detail-kukang">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i class="fa-solid fa-x"></i></a>
+        <div class="content">
+          <img src="assets/satwa/kukang.jpeg" alt="" />
+          <div class="modal-text">
+            <h3>Kukang</h3>
+            <p>
+              Kukang —kadang-kadang disebut pula malu-malu— adalah jenis primata
+              yang gerakannya lambat. Warna rambutnya beragam, dari kelabu
+              keputihan, kecoklatan, hingga kehitam-hitaman. Pada punggung
+              terdapat garis cokelat melintang dari belakang hingga dahi, lalu
+              bercabang ke dasar telinga dan mata.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="detail-zebra">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i class="fa-solid fa-x"></i></a>
+        <div class="content">
+          <img src="assets/satwa/zebra.jpg" alt="" />
+          <div class="modal-text">
+            <h3>Zebra</h3>
+            <p>
+              Seperti hewan Equus liar lainnya, zebra memiliki tubuh yang
+              berbentuk seperti tong dengan ekor yang berumbai, wajah yang
+              memanjang, dan leher yang panjang dengan rambut di atas leher yang
+              panjang dan berdiri. Tungkai mereka yang panjang dan ramping
+              berujung pada sebuah tapak keras yang berbentuk seperti sekop.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="detail-anoa">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i class="fa-solid fa-x"></i></a>
+        <div class="content">
+          <img src="assets/satwa/anoa.jpeg" alt="" />
+          <div class="modal-text">
+            <h3>Anoa</h3>
+            <p>
+              Anoa atau kerbau kerdil adalah kerbau endemik yang hidup di
+              daratan Pulau Sulawesi dan Pulau Buton. Banyak yang menyebut anoa
+              sebagai kerbau kerdil. Anoa merupakan hewan yang tergolong fauna
+              peralihan. Anoa merupakan mamalia tergolong dalam famili bovidae
+              yang tersebar hampir di seluruh pulau Sulawesi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/js/bootstrap.min.js"></script>
   </body>
 </html>
